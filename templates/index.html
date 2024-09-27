@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+        <title>Biftu Handbags</title>
+    </head>
+    <body>
+   
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class=" nav__logo-icon"></i> Biftu Handbags
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="{% static 'assets/img/handbag1.png' %}" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Elegance in  <br> Every Bag
+                        </h1>
+                        <p class="home__description">
+                            "Elevating Your Wardrobe with Chic, Timeless Pieces That Bring Out the Best in Every Outfit You Wear."
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="{% static 'assets/img/handbag2.png' %}" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="about__description">
+                            We have over 4000+ unbiased reviews and our customers 
+                            trust our plant process and delivery service every time
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Shop with confidence knowing every handbag is sourced from renowned designers and brands.
+
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Enjoy a seamless shopping experience with our streamlined processes and prompt delivery.
+
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                               Discover sophisticated, high-end handbags that enhance your personal style with timeless allure.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                High Quality Products.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to get your bag <br> easily.
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Choose handbag</h3>
+                            <p class="steps__card-description">
+                                We have several varieties handbags you can choose from.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Place an order</h3>
+                            <p class="steps__card-description">
+                                Once your order is set, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Get your order delivered</h3>
+                            <p class="steps__card-description">
+                                Our delivery process is easy, you receive the order  direct to your nearest pickup station.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Check out our <br> products
+                </h2>
+
+                <p class="product__description">
+                    Here are some available handbags from our store, all are in excellent 
+                    shape and has a long life span. Buy and enjoy best quality.
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag3.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Cacti Handbag</h3>
+                        <span class="product__price">KSH 1999</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag4.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Cactus Handbag</h3>
+                        <span class="product__price">KSH 1199</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag5.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Aloe Vera Handbag</h3>
+                        <span class="product__price">KSH 1799</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag6.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Succulent Handbag</h3>
+                        <span class="product__price">KSH 1599</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag7.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Succulent Handbag</h3>
+                        <span class="product__price">KSH 1099</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="{% static 'assets/img/handbag8.png' %}" alt="" class="product__img">
+
+                        <h3 class="product__title">Green Handbag</h3>
+                        <span class="product__price">KSH 1899</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I get what I ordered?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    To get what you ordered, confirm your order details, track the shipment, and contact customer service if there are any issues.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What if my order is delayed?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    If your order is delayed, check the tracking information, contact customer service for an update, and review the return or refund policy if needed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What are some of the designs you have?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Popular handbag designs include totes, clutches, crossbodies, satchels, hobos, bucket bags, messengers, backpacks, shoulder bags, and belt bags.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I choose a handbag?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Choose a handbag based on purpose, style, size, material, functionality, and how well it complements your wardrobe and comfort.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change my handbags?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    To change your handbags effectively, rotate them based on occasion, season, and outfit, and ensure essentials are transferred smoothly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I get an update for new handbags
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    To get updates on new handbags, subscribe to our newsletter for the latest arrivals, exclusive offers, and fashion tips directly in your inbox.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +25472095173
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    bifuthandbags@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="footer__logo-icon"></i> Biftu Handbags
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - Thika</li>
+                        <li class="footer__information">La Libertad - 43210</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+999 888 777</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/handbag1.png" alt="" class="footer__card">
+                        <img src="assets/img/handbag2.png" alt="" class="footer__card">
+                        <img src="assets/img/handbag3.png" alt="" class="footer__card">
+                        <img src="assets/img/handbag4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Biftu Handbags</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="{% static  'assets/js/main.js' %}"></script>
+    </body>
+</html>
